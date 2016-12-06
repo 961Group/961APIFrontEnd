@@ -5,15 +5,66 @@
     <title>961API</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
-
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
-<div class="menu">
-    <img src="img/logo.png" rel="961API"/>
-    <div>Home</div>
-    <div>Packages</div>
-    <div>About</div>
-    <div>Contact Us</div>
+<body onload="NextSlider(1)">
+<div class="row menu">
+    <div class="col-2">
+        <img src="img/logo.png" width="100%"/>
+    </div>
+    <div class="col-2">
+        <a href=""><span>Home</span></a>
+    </div>
+    <div class="col-2">
+        <a href=""><span>Features</span></a>
+    </div>
+    <div class="col-2">
+        <a href=""><span>Packages</span></a>
+    </div>
+    <div class="col-2">
+        <a href=""><span>About</span></a>
+    </div>
+    <div class="col-2">
+        <a href=""><span>Contact Us</span></a>
+    </div>
 </div>
+<div class="row">
+    <div class="col-12">
+        <img src="img/bg-image-1.jpg" class="slider" width="100%"/>
+        <img src="img/cybersecurity-background.jpg" class="slider" width="100%"/>
+        <img src="img/security-background.png"  class="slider" width="100%"/>
+    </div>
+</div>
+
+    <div class="col-12 rowblock">
+        <p class="title">Quick Solution for Your Applications</p>
+        <span class="text">961API System provides a safe platform for your applications,
+            safety is one of our main priorities, with features such as anti-copy,
+            remote access and the ability to hand out limited licences.
+            With frequent updates, and an easy to use interface in addition to support,
+            we guarantee that you will find our website user friendly. </span>
+    </div>
+
+<div class="col-12 footer">
+
+</div>
+
+<script>
+    var slideIndex = 1;
+    showSlider(slideIndex);
+    function NextSlider(n) {
+        setInterval(function(){ showSlider(slideIndex += n); }, 3000);
+    }
+    function showSlider(n) {
+        var i;
+        var x = document.getElementsByClassName("slider");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length};
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
+</script>
 </body>
 </html>
