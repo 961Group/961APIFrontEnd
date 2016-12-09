@@ -6,10 +6,18 @@
 
 .menu div a span{
     display: flex;
+
+    margin-top: 20px;
+}
+
+.menu span {
     position:relative;
     text-align: center;
 }
 
+#active span {
+    color: #3597d3;
+}
 .menu [class*="col-"] {
     background-color: #f1f1f1;
     text-align: center;
@@ -32,4 +40,8 @@
 
 .menu a div:hover {
     background-color: #ffffff;
+}
+
+.menu {
+    margin-bottom: 10px;
 }

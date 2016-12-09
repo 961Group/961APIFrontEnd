@@ -12,14 +12,14 @@
     <div class="col-2">
         <img src="img/logo.png" width="100%"/>
     </div>
-    <div class="col-2">
-        <a href=""><span>Home</span></a>
+    <div class="col-2" id="active">
+        <a href="index.html"><span>Home</span></a>
     </div>
     <div class="col-2">
-        <a href=""><span>Features</span></a>
+        <a href="features.html"><span>Features</span></a>
     </div>
     <div class="col-2">
-        <a href=""><span>Packages</span></a>
+        <a href="packages.html"><span>Packages</span></a>
     </div>
     <div class="col-2">
         <a href=""><span>About</span></a>
@@ -29,14 +29,26 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-12">
-        <img src="img/bg-image-1.jpg" class="slider" width="100%"/>
-        <img src="img/cybersecurity-background.jpg" class="slider" width="100%"/>
-        <img src="img/security-background.png"  class="slider" width="100%"/>
+
+    <div class="col-12  slider">
+        <img src="img/bg-image-1.jpg" width="100%"/>
+        <h1>Welcome To 961API</h1>
+    </div>
+    <div class="col-12  slider">
+        <img src="img/cybersecurity-background.jpg" width="100%"/>
+        <h1>“Securing a computer system has traditionally been a battle of wits: the penetrator tries to find the holes,
+            and the designer tries to close them.” </h1>
+    </div>
+
+    <div class="col-12  slider">
+        <img src="img/security-background.png" width="100%"/>
+        <h1>“Amateurs hack systems, professionals hack people.”</h1>
     </div>
 </div>
 
-    <div class="col-12 rowblock">
+
+<div id="featuretxt">
+    <div class="col-12">
         <p class="title">Quick Solution for Your Applications</p>
         <span class="text">961API System provides a safe platform for your applications,
             safety is one of our main priorities, with features such as anti-copy,
@@ -44,8 +56,29 @@
             With frequent updates, and an easy to use interface in addition to support,
             we guarantee that you will find our website user friendly. </span>
     </div>
+</div>
 
-<div class="col-12 footer">
+<div class="col-12">
+    <div class="col-4 feature">
+        <p class="title">Safety</p>
+        <img src="img/security_question_set.png" height="128" width="128"/>
+    </div>
+
+
+    <div class="col-4 feature">
+        <p class="title">Protection</p>
+        <img src="img/protection.png" height="128" width="128"/>
+    </div>
+
+
+    <div class="col-4 feature">
+        <p class="title">Prevention</p>
+        <img src="img/prevention.png" height="128" width="128"/>
+    </div>
+</div>
+
+<div class="col-12 footer !important">
+    <span class="text">Developed By Tony Jabbour-2016</span>
 
 </div>
 
@@ -53,17 +86,24 @@
     var slideIndex = 1;
     showSlider(slideIndex);
     function NextSlider(n) {
-        setInterval(function(){ showSlider(slideIndex += n); }, 3000);
+        setInterval(function () {
+            showSlider(slideIndex += n);
+        }, 3000);
     }
     function showSlider(n) {
         var i;
         var x = document.getElementsByClassName("slider");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length};
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
+        ;
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
         }
-        x[slideIndex-1].style.display = "block";
+        x[slideIndex - 1].style.display = "block";
     }
 </script>
 </body>

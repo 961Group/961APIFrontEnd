@@ -1,13 +1,72 @@
 *{
     background-color: #f1f1f1;
 }
-.rowblock{
 
+.feature {
     text-align: center;
 }
+
+.feature:hover {
+    border: solid 1px;
+
+}
+
+.feature > p:hover {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    color: red;
+
+}
+
+.slider > img {
+    position: relative;
+    width: 100%;
+}
+
+.slider > h1 {
+    position: absolute;
+    top: 200px;
+    right: 30%;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font: bold 24px/45px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+#featuretxt {
+    text-align: center;
+}
+
+#featureimg {
+    float: left;
+}
+
 .title{
     font-size: 25px;
+
+}
+
+.underline {
+    font-weight: bold;
+    text-decoration: underline;
 }
 .text{
+    font-family: "Berlin Sans FB", sans-serif;
+}
+
+.footer {
+    margin-top: 150px;
     text-align: center;
+    background-color: #4B494F;
+
+}
+
+.footer > span {
+    color: white;
+    background-color: transparent;
+
 }
