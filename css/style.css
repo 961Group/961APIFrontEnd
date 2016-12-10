@@ -15,9 +15,7 @@
 .feature > p:hover {
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
-
-    color: red;
-
+    color: #3597D3;
 }
 
 .slider > img {
@@ -39,10 +37,24 @@
     padding: 10px;
 }
 
+.righttext {
+    text-align: right;
+}
+
+.lefttext {
+    text-align: left;
+}
 #featuretxt {
     text-align: center;
 }
 
+#JustifyText {
+    text-align: justify;
+    display: inline-block;
+    letter-spacing: 1px;
+    line-height: 250%;
+    word-spacing: 2px;
+}
 #featureimg {
     float: left;
 }
@@ -78,6 +90,12 @@
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
 }
 
+.TextHeader {
+    background-color: #3597D3;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px 10px 0px 0px;
+}
 .price .header {
     background-color: #111;
     color: white;
@@ -99,7 +117,6 @@
 }
 
 .price .ColText {
-    background-color: #eee;
     font-size: 20px;
     text-align: center;
 }
