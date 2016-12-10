@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body onload="NextSlider(1)">
+<body>
 <div class="row menu">
     <div class="col-2">
         <img src="img/logo.png" width="100%"/>
@@ -35,7 +35,30 @@
     </div>
 </div>
 
+<div class="col-12">
+    <div class="col-6">
+        <img src="img/staticmap.png"/>
+    </div>
 
+    <div class="col-6 contactus container">
+        <div>
+            <label for='name'>Your Full Name*: </label><br/>
+            <input type='text' name='name' id='name' value='' maxlength="50"/><br/>
+        </div>
+        <div>
+            <label for='email'>Email Address*:</label><br/>
+            <input type='text' name='email' id='email' value='' maxlength="50"/><br/>
+        </div>
+
+        <div>
+            <label for='message'>Message:</label><br/>
+            <textarea rows="10" cols="50" name='message' id='message'></textarea>
+        </div>
+    </div>
+    <div>
+        <p class="ColText"><a href="#" class="contactusButton">Contact Us</a></p>
+    </div>
+</div>
 <div class="col-12 footer">
     <span class="text">Developed By Tony Jabbour-2016</span>
 
