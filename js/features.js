@@ -7,10 +7,7 @@ var closepopup = document.getElementsByClassName("close")[0];
 for (var i = 0; i < openpopup.length; i++) {
     openpopup[i].onclick = function () {
         var sender = this;
-
         document.querySelector("div[class='popup-header'] h2").innerHTML = this.innerHTML;
-
-
         $.getJSON('./json/features.json', function (data) {
             if (sender.id == 'UFA') {
                 $('div[class="popup-body"] p').html(data.UFA);

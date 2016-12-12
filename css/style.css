@@ -57,6 +57,10 @@
     text-align: left;
 }
 
+.centered {
+    text-align: center;
+}
+
 .featuretxt {
     text-align: center;
 }
@@ -70,6 +74,14 @@
 }
 
 .featureimg {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
+
+.floatleft {
     float: left;
 }
 .title{
@@ -278,14 +290,38 @@
     cursor: pointer;
 }
 
+.login > a {
+    background-color: #3597D3;
+}
+
+.element:hover {
+    height: 128px;
+    width: 128px;
+    margin: 0 auto;
+    animation-name: stretch;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes stretch {
+    100% {
+        transform: scale(1.4);
+    }
+}
+
 
 .footer {
-    margin-top: 150px;
+    margin-top: 110px;
     text-align: center;
     background-color: #4B494F;
 }
 
-.footer > span {
+.footer > img {
     color: white;
     background-color: transparent;
 }

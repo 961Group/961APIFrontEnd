@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 <body>
+<div class="col-12">
 <div class="row menu">
     <div class="col-2">
-        <img src="img/logo.png" width="100%"/>
+        <a href="index.html"> <img src="img/logo.png" width="100%"/></a>
     </div>
     <div class="col-2">
         <a href="index.html"><span>Home</span></a>
@@ -28,7 +30,7 @@
         <a href="contact-us.html"><span>Contact Us</span></a>
     </div>
 </div>
-
+</div>
 <div class="featuretxt">
     <div class="col-12">
         <p class="title underline">Contact Us</p>
@@ -39,7 +41,7 @@
     <div class="col-6">
         <img src="img/staticmap.png"/>
     </div>
-
+    <form name="contactus" onsubmit="return validatecontactus()" action="">
     <div class="col-6 contactus container">
         <div>
             <label for='name'>Your Full Name*: </label><br/>
@@ -56,13 +58,16 @@
         </div>
     </div>
     <div>
-        <p class="ColText"><a href="#" class="contactusButton">Contact Us</a></p>
+        <p class="ColText">
+            <button href="#" type="submit" class="contactusButton">Contact Us</button>
+        </p>
     </div>
+    </form>
 </div>
 <div class="col-12 footer">
-    <span class="text">Developed By Tony Jabbour-2016</span>
+    <img src="img/footerlogo.png"/>
 
 </div>
-
+<script src="js/contactus.js"></script>
 </body>
 </html>
