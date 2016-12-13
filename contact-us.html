@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/responsive.css">
-
 </head>
 <body>
 <div class="col-12">
@@ -27,7 +26,7 @@
         <a href="about.html"><span>About</span></a>
     </div>
     <div class="col-2" id="active">
-        <a href="contact-us.html"><span>Contact Us</span></a>
+        <a href="contact-us.html"><span>Contact</span></a>
     </div>
 </div>
 </div>
@@ -43,32 +42,40 @@
     </div>
     <form name="contactus" onsubmit="return validatecontactus()" action="">
     <div class="col-6 contactus container">
-        <div>
+        <div class="row">
             <label for='name'>Your Full Name*: </label><br/>
             <input type='text' name='name' id='name' value='' maxlength="50"/><br/>
         </div>
-        <div>
+        <div class="row">
             <label for='email'>Email Address*:</label><br/>
             <input type='text' name='email' id='email' value='' maxlength="50"/><br/>
         </div>
-
-        <div>
+        <div class="row">
             <label for='message'>Message:</label><br/>
             <textarea rows="10" cols="50" name='message' id='message'></textarea>
         </div>
-    </div>
-
-        <div>
-        <p class="ColText">
-            <button href="#" type="submit" class="contactusButton">Contact Us</button>
-        </p>
+        <div class="row">
+            <div class="alert">
+                <span class="closebtn">&times;</span>
+                <strong>Error!</strong>&nbsp;&nbsp;<span data-id="message"></span>
+            </div>
+            <div class="alert success">
+                <span class="closebtn">&times;</span>
+                <strong>Success!</strong>&nbsp;&nbsp;<span data-id="message"></span>
+            </div>
+        </div>
+        <div class="row">
+            <p class="ColText">
+                <button href="#" type="submit" class="contactusButton">Contact Us</button>
+            </p>
+        </div>
     </div>
     </form>
 </div>
 <div class="col-12 footer">
     <img src="img/footerlogo.png"/>
-
 </div>
+<script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/contactus.js"></script>
 </body>
 </html>

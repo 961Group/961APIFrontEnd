@@ -45,3 +45,7 @@
 .menu {
     margin-bottom: 10px;
 }
+
+.menu span {
+    margin-left: 45%;
+}
