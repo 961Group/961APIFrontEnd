@@ -185,6 +185,11 @@
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+
+}
+
+.contactus button {
+    cursor: pointer;
 }
 .contactus input[type="text"], textarea {
     font-family: Arial, Verdana, sans-serif;
